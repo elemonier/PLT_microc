@@ -1,6 +1,8 @@
 open Ast
 open Bytecode
 
+(*COMPILES INTO BYTECODE, then EXECUTES runs on bytecode output*)
+
 module StringMap = Map.Make(String)
 
 (* Symbol table: Information about all the names in scope *)

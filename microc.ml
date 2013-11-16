@@ -1,5 +1,5 @@
 type action = Ast | Interpret | Bytecode | Compile
-
+(*Compile.translate = ranslate into bytecode*)
 let _ =
   let action = if Array.length Sys.argv > 1 then
     List.assoc Sys.argv.(1) [ ("-a", Ast);
